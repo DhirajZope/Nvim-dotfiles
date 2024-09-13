@@ -6,7 +6,7 @@ local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
-map("v", "<leader>fs", ":lua vim.lsp.buf.range_formatting()<CR>", { desc = "Format Range" })
+map("v", "<leader>fs", ":lua vim.lsp.buf.format()<CR>", { noremap = true, silent = true, desc = "Format Range." })
 
 -- Keybinding for LazyGit
 map("n", "<leader>lg", "<CMD>LazyGit<CR>", { desc = "LazyGit Prompt" })
